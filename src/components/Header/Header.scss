@@ -1,0 +1,42 @@
+.header {
+  width: 100vw;
+  height: 3rem;
+  background-color: transparent;
+  color: powderblue;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  font-weight: bold;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: all .2s ease-out;
+  opacity: 1;
+
+  &.hidden {
+     opacity: 0;
+  }
+  &.notTransparent {
+    background-color: #163b89;
+  }
+  &-text {
+    transition: color .3s;
+    &:hover {
+      color: lightgray;
+      cursor: pointer;
+    }
+    &:active {
+      color: white;
+      cursor: pointer;
+    }
+  }
+
+
+
+}
