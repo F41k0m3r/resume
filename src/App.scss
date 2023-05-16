@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box ;
+  font-family: 'Raleway', sans-serif;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 body {
   height: 400vh;
-  background-color: #000524;
+  background-color:#150b47;
 }

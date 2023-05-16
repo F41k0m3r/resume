@@ -1,0 +1,58 @@
+@import "../../variables";
+
+.home {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  &__wrap {
+    height: 45vh;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+
+    &__name {
+      font-size: 6rem;
+      width: 40vw;
+
+    }
+    &__description {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .home{
+    &__wrap {
+      width: 60vw;
+      height: 30vh;
+      &__name{
+        font-size: 3rem;
+      }
+      &__description {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .home{
+    &__wrap {
+      width: 70vw;
+      height: 30vh;
+      &__name{
+        font-size: 2rem;
+      }
+      &__description {
+        font-size: 1rem;
+      }
+    }
+  }
+}

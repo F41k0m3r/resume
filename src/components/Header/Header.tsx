@@ -6,12 +6,12 @@ const MyComponent:FC = () => {
     const [isHeaderVisible, setIsHeaderVisible] = useState<boolean>(true);
     const [isTransparent, setIsTransparent] = useState<boolean>(true)
     useEffect(() => {
-        if (scrollValue > 400 && scrollValue < windowHeight) {
+        if (scrollValue > 150 && scrollValue < windowHeight) {
             setIsHeaderVisible(false)
         }else if (scrollValue > windowHeight) {
             setIsHeaderVisible(true)
             setIsTransparent(false)
-        }else if (scrollValue < 400) {
+        }else if (scrollValue < 150) {
             setIsHeaderVisible(true)
             setIsTransparent(true)
         }

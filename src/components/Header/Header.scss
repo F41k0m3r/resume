@@ -1,6 +1,8 @@
+@import "../../variables";
+
 .header {
   width: 100vw;
-  height: 3rem;
+  height: $header-height;
   background-color: transparent;
   color: powderblue;
   display: flex;
@@ -27,6 +29,10 @@
   }
   &-text {
     transition: color .3s;
+    display: inline-block;
+    font-size: 1.1rem;
+    position: relative;
+    color: whitesmoke;
     &:hover {
       color: lightgray;
       cursor: pointer;
@@ -35,8 +41,49 @@
       color: white;
       cursor: pointer;
     }
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: .13rem;
+      bottom: 0;
+      left: 0;
+      background-color:gray;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
   }
+}
 
+@media (max-width: 1000px) {
+  .header {
+    gap: 1rem;
 
+    &-text {
+      font-size: 1.8rem;
+    }
+  }
+}
+@media (max-width: 700px) {
+  .header {
+    gap: 1rem;
 
+    &-text {
+      font-size: 1rem;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .header {
+    gap: .6rem;
+
+    &-text {
+      font-size: 1rem;
+    }
+  }
 }
