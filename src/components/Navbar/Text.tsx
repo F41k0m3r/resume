@@ -7,7 +7,7 @@ interface props {
 
 const Text:FC<props> = ({to, text}) => {
     return (
-        <a href={`/#${to}`}>
+        <a href={`/resume/#${to}`}>
             <p className={'header-text'}>{text}</p>
         </a>
     );

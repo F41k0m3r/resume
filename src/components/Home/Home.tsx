@@ -39,7 +39,7 @@ const Home:FC = () => {
                         link={'https://t.me/f41kom3r'}
                     />
                 </div>
-                <a href="/#about">
+                <a href="/resume/#about">
                     <span className="home__buttonsWrap__pulse">
                         <SouthIcon
                             className={'home__buttonsWrap__pulse__icon'}
