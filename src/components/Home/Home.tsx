@@ -36,7 +36,7 @@ const Home:FC = () => {
                     <SocialButton
                         svgLink={'https://img.icons8.com/?size=512&id=30888&format=svg'}
                         text={'Discord'}
-                        link={'https://t.me/f41kom3r'}
+                        link={'https://discordapp.com/users/748299471556706324'}
                     />
                 </div>
                 <a href="/resume/#about">
