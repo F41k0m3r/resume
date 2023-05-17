@@ -15,7 +15,7 @@ const About:FC = () => {
             <div className="about__me">
                 <h2>About Me</h2>
                 <p>
-                    I'm a Junior+ React Developer from Russia. Also i can code on pure JS. Sometimes I use different state managers(for React), like Zustand, MobX, Redux TK. Sometimes i use CSS Modules, or SCSS Modules.
+                    I'm a Middle React Developer from Russia. Also i can code on pure JS. Sometimes I use different state managers(for React), like Zustand, MobX, Redux TK. Sometimes i use CSS Modules, or SCSS Modules.
                 </p>
             </div>
             <div className="about__contact">
