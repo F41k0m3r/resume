@@ -1,35 +1,55 @@
 .resume {
-  height:auto;
+  height: auto;
   padding-bottom: 2rem;
-  width: 100vw;
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 2rem;
-  align-items: center;
-  justify-content: start;
+  justify-content: center;
 
-  &__header {
-    color: white;
-    position: relative;
-    height: 2rem;
-    &::after {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: .1rem;
-      top: 2.5rem;
-      left: 0;
-      background-color:cornflowerblue;
+  &__skills,
+  &__tools {
+    max-width: 30vw;
+
+    &__header {
+      color: white;
+      position: relative;
+      margin-top: 2rem;
+      height: 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: .1rem;
+        top: 2.5rem;
+        left: 0;
+        background-color: cornflowerblue;
+      }
+    }
+
+    &__table {
+      flex-wrap: wrap;
+      display: flex;
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      justify-content: center;
+      gap: .5rem;
+
+      &-element {
+        list-style: none;
+      }
     }
   }
-  &__table {
-    width: 25vw;
-    display: flex;
-    max-width: 25vw;
-    justify-content: center;
-
-    &-element {
-      list-style: none;
+}
+@media (max-width: 1000px) {
+  .resume {
+    &__skills,
+    &__tools {
+      max-width: 60vw;
     }
   }
 }

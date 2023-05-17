@@ -7,8 +7,9 @@ interface props {
     hoverColor?:string
     text:string
     link:string
+    size?:number
 }
-const SocialButton:FC<props> = ({svgLink, text, color='#172dff', link, hoverColor='slateblue'}) => {
+const SocialButton:FC<props> = ({svgLink, text, color='#172dff', link, hoverColor='slateblue', size=40}) => {
     const [isHover, setIsHover] = useState<boolean>(false)
     const handleMouseEnter = () => {
         setIsHover(true);
@@ -31,7 +32,12 @@ const SocialButton:FC<props> = ({svgLink, text, color='#172dff', link, hoverColo
                 onMouseLeave={handleMouseLeave}
             >
                 <div style={style.button} className={'button__wrap'}>
-                    <img width={'50px'} height={'50px'} alt={text} src={svgLink} className={'button__wrap__icon'}></img>
+                    <img
+                        width={size}
+                        height={size}
+                        alt={text}
+                        src={svgLink}
+                        className={'button__wrap__icon'}></img>
                     <div className={'button__wrap__text'}>{text}</div>
                 </div>
             </a>

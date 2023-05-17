@@ -18,15 +18,16 @@ const Home:FC = () => {
                 <p className={'home__wrap__description'}>
                     I am a web development engineer and I use React.JS to develop web sites.
                     This project is a mine resume.
-                    I have been programming for about {currentYear - 2022} year{currentYear - 2022 > 1 ? 's' : ''}.
+                    I have been programming for about {currentYear - 2021.5} year{currentYear - 2022 > 1 ? 's' : ''}.
                 </p>
             </div>
             <div className="home__buttonsWrap">
                 <div className="home__buttonsWrap__linksWrap">
                     <SocialButton
-                        svgLink={'https://img.icons8.com/?size=512&id=oWiuH0jFiU0R&format=svg'}
+                        svgLink={'https://img.icons8.com/?size=512&id=lUktdBVdL4Kb&format=svg'}
                         text={'Telegram'}
                         link={'https://t.me/f41kom3r'}
+                        size={38}
                     />
                     <SocialButton
                         svgLink={'https://img.icons8.com/?size=512&id=3tC9EQumUAuq&format=svg'}

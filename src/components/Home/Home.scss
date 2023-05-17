@@ -66,8 +66,17 @@
         background-color: darkviolet;
       }
     }
-    &:hover {
-      gap: 7rem;
+    &::before {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 20rem;
+    }
+    &::before:hover {
+      &__linksWrap {
+        gap: 3rem;
+      }
     }
   }
 }

@@ -13,16 +13,16 @@ const About:FC = () => {
                 alt=""
             />
             <div className="about__me">
-                <h2>About Me</h2>
+                <h2 className={'about__me__header'}>About Me</h2>
                 <p>
-                    I'm a Middle React Developer from Russia. Also i can code on pure JS. Sometimes I use different state managers(for React), like Zustand, MobX, Redux TK. Sometimes i use CSS Modules, or SCSS Modules.
+                    I am a React developer. I own <text className={'about__me-skill'}>React</text>, <text className={'about__me-skill'}>CSS</text>, <text className={'about__me-skill'}>JavaScript</text>, <text className={'about__me-skill'}>SCSS</text>, <text className={'about__me-skill'}>TypeScript</text>, <text className={'about__me-skill'}>MobX</text>, <text className={'about__me-skill'}>Redux</text>, <text className={'about__me-skill'}>Zustand</text>. I work with adaptive, cross-browser and accessible layout. I know how to develop reactive applications.
                 </p>
             </div>
             <div className="about__contact">
-                <h2>Contact</h2>
-                <p>Roman</p>
+                <h2 className={'about__contact__header'}>Contact</h2>
+                <p className={'about__contact-important'}>Roman</p>
                 <p>Russia, Moscow Region</p>
-                <p>falkomer.contact@gmail.com</p>
+                <p className={'about__contact-important'}>falkomer.contact@gmail.com</p>
             </div>
         </div>
     );

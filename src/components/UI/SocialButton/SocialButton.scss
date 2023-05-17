@@ -8,11 +8,14 @@
     display: flex;
     flex-direction: row;
     justify-content: start;
+    gap: .4rem;
     align-items: center;
 
 
     &__icon {
       margin-left: .5rem;
+      -webkit-filter: invert(100%);
+      filter: invert(100%);
     }
     &__text {
       color: white;
