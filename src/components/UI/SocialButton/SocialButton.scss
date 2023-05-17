@@ -1,0 +1,37 @@
+@import "../../../variables";
+
+.button {
+  &__wrap {
+    width: auto;
+    height: $linkButton-height;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+
+    &__icon {
+      margin-left: .5rem;
+    }
+    &__text {
+      color: white;
+      font-size: 22px;
+      margin-right: .5rem;
+    }
+  }
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+}
+
+
+@media (max-width: 1000px) {
+  .button {
+    &__wrap {
+      width: 10rem;
+      justify-content: start;
+    }
+  }
+}

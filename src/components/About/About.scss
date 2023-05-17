@@ -1,0 +1,39 @@
+.about {
+  height: 80vh;
+  width: 100vw;
+  background-color: #000524;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  color: white;
+  justify-content: center;
+  align-items: center;
+
+  &__img {
+    background-color: white;
+    border-radius: 25%;
+    padding: 10px;
+  }
+  &__me {
+    width: 20vw;
+  }
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .about {
+    height: auto;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    &__me {
+      width: 70vw;
+    }
+  }
+}

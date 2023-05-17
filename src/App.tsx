@@ -1,16 +1,16 @@
-import './App.scss'
-import Header from './components/Header/Header';
+import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
-import ScrollBar from './components/ScrollBar/ScrollBar';
+import About from './components/About/About';
+import Resume from './components/Resume/Resume';
+import './App.scss';
 
 function App() {
-
-  return (
+    return (
     <div className={'app'}>
-      <ScrollBar setHeight={'auto'}>
-          <Header/>
-          <Home/>
-      </ScrollBar>
+        <Navbar/>
+        <Home/>
+        <About/>
+        <Resume/>
     </div>
   )
 }
